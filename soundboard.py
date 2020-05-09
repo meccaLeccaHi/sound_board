@@ -14,11 +14,13 @@ GPIO.setup(27, GPIO.IN)
 
 pygame.mixer.init(48000, -16, 1, 1024)
 
-applause = pygame.mixer.Sound(sound_dir+"applause.wav")
-yay = pygame.mixer.Sound(sound_dir+"yay.wav")
+# applause = pygame.mixer.Sound(sound_dir+"applause.wav")
+# yay = pygame.mixer.Sound(sound_dir+"yay.wav")
 boo = pygame.mixer.Sound(sound_dir+"boo.wav")
 laugh = pygame.mixer.Sound(sound_dir+"laugh.wav")
 cricket = pygame.mixer.Sound(sound_dir+"cricket.wav")
+ahh = pygame.mixer.Sound(sound_dir+"ahh.wav")
+gasp = pygame.mixer.Sound(sound_dir+"gasp.wav")
 # buzzer = pygame.mixer.Sound(sound_dir+"buzzer.wav")
 
 soundChannelA = pygame.mixer.Channel(1)
@@ -32,10 +34,10 @@ print("Sampler Ready.")
 while True:
     try:
         if (GPIO.input(23) == True):
-            soundChannelA.play(laugh)
+            soundChannelA.play(gasp)
             print('chan 23')
         if (GPIO.input(24) == True):
-            soundChannelB.play(applause)
+            soundChannelB.play(ahh)
             print('chan 24')
         if (GPIO.input(25) == True):
             soundChannelC.play(boo)
@@ -44,7 +46,7 @@ while True:
             soundChannelD.play(cricket)
             print('chan 26')
         if (GPIO.input(27) == True):
-            soundChannelE.play(yay)
+            soundChannelE.play(laugh)
             print('chan 27')
         sleep(.1)
     except KeyboardInterrupt:
