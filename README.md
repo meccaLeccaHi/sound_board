@@ -12,6 +12,7 @@ alt="youtube video" border="10" height="350" /></a>
 - [Raspberry pi](https://www.raspberrypi.org/) with 40-pin [GPIO](https://www.raspberrypi.org/documentation/usage/gpio/)
 #### Dependencies
 - [pygame](https://www.pygame.org/)
+- Sound files normalized using [ffmpeg](https://pypi.org/project/ffmpeg-normalize/)
 
 > Inspired by:
 > https://makezine.com/projects/make-33/simple-soundboard/
