@@ -2,8 +2,7 @@
 
 A super-simple, Python-powered soundboard to use while teaching class and fulfill my dreams of being a talk-show host.
 
-<center><img src='https://i.imgur.com/5X1MFc5.jpg' alt="sound board" height="400"/></center>
-
+<div align="center"><img src='https://i.imgur.com/5X1MFc5.jpg' alt="sound board" height="400"/></div>
 
 <div align="center">
   <a href="http://www.youtube.com/watch?feature=player_embedded&v=14gpVTiu29U" 
